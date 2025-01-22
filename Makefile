@@ -2,6 +2,7 @@
 LATEX = pdflatex
 FILE = resume
 VIEWER = xdg-open
+CONVERTER = convert 
 
 # target 
 all: generate clean-aux
@@ -9,6 +10,7 @@ all: generate clean-aux
 # generate pdf
 generate: $(FILE).tex
 	$(LATEX) -interaction=nonstopmode $(FILE).tex
+	$(CONVERTER) -density 300 resume.pdf -quality 100 resume.png
 
 clean-aux:
 	-rm -f *.aux *.log *.out *.synctex.gz
