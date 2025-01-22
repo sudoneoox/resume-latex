@@ -1,2 +1,2 @@
 # Resume
-!(resume.pdf)
+(resume.pdf)
