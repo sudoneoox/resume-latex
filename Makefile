@@ -2,7 +2,7 @@
 LATEX = pdflatex
 FILE = resume
 VIEWER = xdg-open
-CONVERTER = convert 
+CONVERTER = magick
 
 # target 
 all: generate clean-aux
@@ -10,7 +10,7 @@ all: generate clean-aux
 # generate pdf
 generate: $(FILE).tex
 	$(LATEX) -interaction=nonstopmode $(FILE).tex
-	$(CONVERTER) -density 300 resume.pdf -quality 100 resume.png
+	$(CONVERTER) -density 300 resume.pdf -background white -alpha remove -alpha off -quality 100 resume.png
 
 clean-aux:
 	-rm -f *.aux *.log *.out *.synctex.gz
