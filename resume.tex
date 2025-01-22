@@ -1,0 +1,230 @@
+\documentclass[letterpaper,11pt]{article}
+
+% ---  PACKAGES --- 
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref} % hides url links
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{amsmath}
+\usepackage{multirow} % header formatting 
+\usepackage{fontawesome5} % icons
+
+
+%----------------------------------------------------
+%                   FONT OPTIONS 
+% ---------------------------------------------------
+
+% sans-serif
+% \usepackage[default]{sourcesanspro}
+
+% serif
+\usepackage{charter}
+
+%----------------------------------------------------
+%                   FORMATTING 
+% ---------------------------------------------------
+
+\pagestyle{fancy}
+\fancyhf{} 
+\fancyfoot{}
+
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%----------------------------------------------------
+%            CUSTOM COMMANDS / MACROS 
+% ---------------------------------------------------
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%------------------------------------------------------------
+%%%%%%%%%%%%%%%%%%%%%%%  RESUME %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%------------------------------------------------------------
+
+\begin{document}
+
+%------------------------------------------------------------
+
+%-------------------------HEADING----------------------------
+
+%------------------------------------------------------------
+
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \multirow{3}{*}{\textbf{\Large Diego Coronado}} & \small\faGlobe\ \href{https://sudoneoox.github.io}{https://sudoneoox.github.io} \\
+  & \small\faEnvelope\ \href{mailto:diegoa2992@gmail.com}{diegoa2992@gmail.com} \\
+  & \small\faGithub\ \href{https://github.com/sudoneoox}{sudoneoox} \ \textbf{·} \ \small\faLinkedin\ \href{https://www.linkedin.com/in/diegocoronado0}{diegocoronado0} 
+
+\end{tabular*}
+
+
+%------------------------------------------------------------
+
+%-------------------------EDUCATION--------------------------
+
+%------------------------------------------------------------
+
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Houston, \textit{GPA: 3.8}}{Houston, TX}
+      {B.S. Computer Science, Focus: Software Development}{2023 - 2026}
+    \resumeSubSubheading
+      {B.S. Mathematics, Focus: Data Science}{2024 - 2026}
+  \resumeSubHeadingListEnd
+
+%------------------------------------------------------------
+
+%-------------------------EXPERIENCE-------------------------
+
+%------------------------------------------------------------
+\section{Experience}
+
+\resumeSubHeadingListStart
+    % ---------- WORK EXPERIENCE 1 ------------
+    \resumeSubheading
+    {Tutor Fellowship} {Jan 2025 -- Apr 2025}
+    {Ignite Teach For America} {Remote}
+      \resumeItemListStart
+        \resumeItem{Provided virtual one-on-one tutoring to underserved students, helping accelerate their academic progress and foster educational equity}
+        \resumeItem{Participated in comprehensive professional development sessions to enhance tutoring effectiveness and student engagement strategies}
+        \resumeItem{Collaborated with Ignite Site Leaders and fellow tutors to implement personalized learning approaches and track student progress}
+        \resumeItem{Engaged in regular feedback sessions and development activities to continuously improve tutoring effectiveness}
+      \resumeItemListEnd
+
+    % ------- WORK EXPERIENCE 2 -----------
+    \resumeSubheading
+    {Undergraduate Research} {May 2024 -- Aug 2024}
+    {CTBP Rice University} {Houston, TX}
+    \resumeItemListStart
+        \resumeItem{Conducted research on cell differentiation of chromosome ensembles using minimal models}
+        \resumeItem{Utilized Minimal Polymer Models to simulate and analyze Hi-C maps for multiple human cell lines}
+        \resumeItem{Performed extensive simulations of Chromosome 10 across various cell lines}
+        \resumeItem{Developed computational protocols for ensemble analysis using techniques such as PCA, t-SNE, and UMAP}
+        \resumeItem{Collaborated with team members and presented findings in weekly meetings}
+    \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+
+%------------------------------------------------------------
+
+%-------------------------PROJECTS---------------------------
+
+%------------------------------------------------------------
+
+\section{Projects}
+    \resumeSubHeadingListStart
+
+    % ---------- PROJECT 1 ------------
+      \resumeProjectHeading
+       {\textbf{Medical Clinic Management System} $|$ \text{MySQL, Node.js, Express, Sequelize, React}}{}
+        \resumeItemListStart
+            \resumeItem{Designed and implemented a detailed database schema for efficient management of medical clinic operations}
+            \resumeItem{Developed a backend API using Node.js, Express, and Sequelize ORM, establishing complex relationships between entities}
+            \resumeItem{Implemented user authentication and role-based access control for secure data management across different user roles}
+            \resumeItem{Created API endpoints for core functionalities including user registration, appointment scheduling, and medical record management}
+        \resumeItemListEnd
+
+    % ---------- PROJECT 2 ------------
+      \resumeProjectHeading
+      {\textbf{OpenMiChroM} $|$ \text{Python}}{}
+          \resumeItemListStart
+            \resumeItem{Developed a Python-based analysis tool for processing and visualizing Hi-C data from chromosome simulations}
+            \resumeItem{Utilized advanced dimensionality reduction techniques including PCA, t-SNE, and UMAP for analyzing chromosome structural ensembles}
+            \resumeItem{Created efficient data processing pipelines to handle large-scale genomic datasets from multiple human cell lines}
+            \resumeItem{Incorporated CUDA GPU acceleration and Multithreading capabilities to enhance performance on large datasets}
+            \resumeItem{Implemented caching mechanisms to optimize repeated computations and improve overall  efficiency}
+            \resumeItem{Successfully differentiated human cell lines based on subtle differences in simulated chromosomal structures, revealing cell-type-specific information}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+%------------------------------------------------------------
+
+%------------------------ SKILLS ----------------------------
+
+%------------------------------------------------------------
+
+\section{Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+\small{\item{
+\textbf{Technical}{: C/C++, Python, JavaScript/TypeScript, PostgreSQL, Git, Linux/Unix, Docker} \\
+\textbf{Development}{: Multithreading, Memory optimization, Full-stack development} \\
+\textbf{Professional}{: Communication, Problem-solving, Research methodology, Team collaboration, Data Analysis}}}
+\end{itemize}
+
+%------------------------------------------------------------
+
+%-------------------RELEVANT COURSEWORK ---------------------
+
+%------------------------------------------------------------
+\section{Relevant Course Work}
+\begin{itemize}[leftmargin=0.15in, label={}]
+\small{\item{
+\textbf{Computer Science}{: Algorithms \& Data Structures, Operating Systems, Database Systems, Software Engineering, Software Design} \\
+\textbf{Mathematics}{: Linear Algebra, Probability, Statistics for Sciences, Calculus I-III, Discrete Mathematics}
+}}
+\end{itemize}
+
+
+
+
+\end{document}
