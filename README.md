@@ -1,2 +1,2 @@
 # Resume
-![Resume](resume.png)
+![RESUME](resume.png)

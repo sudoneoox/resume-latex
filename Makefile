@@ -21,6 +21,7 @@ clean-aux:
 # clean aux and pdf file
 clean: clean-aux
 	-rm -f $(FILE).pdf
+	-rm -f $(FILE).png
 
 # view pdf
 view: generate
